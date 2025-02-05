@@ -84,22 +84,14 @@ Sprawdź adres IP:
 curl ifconfig.me
 
 
-----------Schemat architektury VPN dla małej firmy--------------
+-------------------Schemat architektury VPN dla małej firmy-------------------
 
-
-+------------+      +-------------+       +------------+
-| Klient VPN | ---> | Serwer VPN  | --->  | Sieć Firmy |
-+------------+      +-------------+       +------------+
-       │                     │                      │
-       │                     │                      │
-       ▼                     ▼                      ▼
-+------------+      +-------------+       +------------+
-|  Laptop   | ---> | Firewall     | --->  |  Serwer    |
-|  Zdalny   |      | Firmowy      |       |  Plików   |
-+------------+      +-------------+       +------------+
+![image](https://github.com/user-attachments/assets/d3bf0b9f-f718-42b7-813f-a7fc025064ce)
 
 
 Słabe strony i sposoby zabezpieczenia
+
+
 Brak dwuskładnikowego uwierzytelnienia
 Rozwiązanie: Wdrożenie TOTP (Time-based One-Time Password) np. Google Authenticator.
 
